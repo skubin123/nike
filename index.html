@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>NIKE</b></a> <canvas id="myCanvas" width="120" height="43"
+          style="border: 1px solid rgb(255, 255, 255);float: left; margin-left: 40%; "></canvas>
+        <script>
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext('2d');
+          x = 0.1;
+          y = 0.1;
+          context.beginPath();
+          context.scale(x, y);
+          context.moveTo(177, -3);
+          context.bezierCurveTo(-128, 298, -2, 520, 309, 388);
+          context.bezierCurveTo(309, 388, 1197, 8, 1197, 8);
+          context.bezierCurveTo(1197, 8, 311, 244, 311, 244);
+          context.bezierCurveTo(60, 289, 128, 70, 177, -3);
+          context.lineWidth = 2;
+
+          // line color
+          context.strokeStyle = 'black';
+          context.fill();
+          context.stroke();
+        </script>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">shoes</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="slika2.jpg"  width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Nike</b></span> <span class="w3-hide-small w3-text-light-red">Just do it</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">shoes</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+		
+        <div class="w3-display-topleft w3-black w3-padding">Air force 1</div>
+        <img src="slika4.jpg" alt="House" style="width:80%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Dunks</div>
+        <img src="slika5.jpg" alt="House" style="width:85%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Air max 270</div>
+        <img src="slika6.jpg" alt="House" style="width:80%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Air max 1</div>
+        <img src="slika7.jpg" alt="House" style="width:90%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Jordan 1</div>
+        <img src="slika8.jpg" alt="House" style="width:80%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Jordan 4</div>
+        <img src="slika9.jpg" alt="House" style="width:80%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Jordan 3</div>
+        <img src="slika10.jpg" alt="House" style="width:80%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Jordan 11</div>
+        <img src="slika12.jpg" alt="House" style="width:78%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Nike je globalno priznana ameriška blagovna znamka za športno opremo, ustanovljena leta 1964. Podjetje se specializira za športno obutev, oblačila in opremo ter slovi po inovacijah, visoki kakovosti izdelkov ter prepoznavnem logotipu "Swoosh". Nike sodeluje z znanimi športniki, ustvarjalci mode in izvaja različne družbene pobude. Je eno največjih imen v svetu športne industrije z globalno prisotnostjo.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="slika13.jpg" alt="John" style="width:100%">
+      <h3>Phil Knight</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Philip Hampson Knight (rojen 24. februarja 1938) je ameriški milijarder, poslovni magnat , ki je soustanovitelj in zaslužni predsednik Nike </p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="300px" style="margin-left: 40%; margin-top: 8%;"
+          viewBox="0 0 1200.000000 427.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,427.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+            <path d="M1519 4043 c-740 -821 -1092 -1322 -1319 -1874 -138 -337 -200 -615
+              -200 -909 0 -387 104 -646 361 -898 185 -181 415 -293 706 -342 148 -26 530
+              -28 710 -5 387 50 834 176 1313 370 217 88 292 119 2935 1250 930 398 2079
+              889 2555 1093 476 203 1425 609 2110 902 685 293 1260 539 1279 547 18 8 31
+              16 28 19 -2 3 -267 -65 -588 -150 -321 -85 -865 -230 -1209 -321 -1089 -289
+              -3167 -842 -3650 -970 -256 -68 -829 -220 -1275 -339 -2215 -588 -2164 -575
+              -2436 -613 -174 -24 -507 -23 -644 1 -251 45 -432 130 -590 277 -408 382 -431
+              1021 -64 1811 46 98 147 289 196 371 2 4 0 7 -5 7 -4 0 -101 -102 -213 -227z" />
+          </g>
+        </svg>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>just do it</p>
+</footer>
+
+</body>
+</html>
